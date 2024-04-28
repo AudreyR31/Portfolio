@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TP2 JQUERY</title>
+    <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+<h class="titre">Mon site web</h>
+<h3>Un autre titre</h3>
+<h class="titre">Un deuxième titre</h>
+<p class="titre">paragraphe</p>
+<button id="change">Changer contenu</button>
+</body>
+
+<script>
+    function modifie()
+    {
+        $("h3.titre").html("Mon site web");
+    }
+    $("#change").on("mouseover", modifie)
+</script>
+
+<! pour utiliser materialize : https://materializeweb.com/getting-started.html>
+</html>

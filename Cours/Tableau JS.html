@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<!Changement d'image avec bouton>
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau JS</title>
+</head>
+
+<body>
+
+    <table>
+       <tr>
+           <td><button onclick="changeimage()">Changer</button</td>
+           <td><img src="USA.jpg" width="250" id="image"></td>
+       </tr>
+    </table>
+
+</body>
+<script>
+function changeimage()
+{
+    image=document.querySelector("#image").src="toulouse-trecobat-constructeur-adobestock.jpg";
+}
+</script>
